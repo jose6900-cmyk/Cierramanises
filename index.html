@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso Rápido</title>
+
+    <!-- Favicon para navegador -->
+    <link rel="icon" href="lava.png" type="image/png">
+
+    <!-- Icono para pantalla de inicio iPhone -->
+    <link rel="apple-touch-icon" href="lava.png">
+
     <style>
         body {
             margin: 0;
@@ -19,10 +26,11 @@
 
         .container {
             text-align: center;
+            max-width: 90%;
         }
 
         h1 {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .button {
@@ -35,11 +43,19 @@
             border-radius: 10px;
             cursor: pointer;
             text-decoration: none;
+            display: inline-block;
             transition: 0.3s;
         }
 
         .button:hover {
             background-color: #e0e0e0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
         }
 
         @media (max-width: 500px) {
@@ -52,8 +68,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>Lava Manises </h1>
-        <a href="https://maker.ifttt.com/trigger/Cierra_Lavanderia/with/key/cPDTpgK4CdrNC60YBkGoGK" class="button">cierra</a>
+        <h1>Lavaexpress MANISES</h1>
+        <img src="lavamanises.jpg" alt="Imagen">
+        <a href="TU_ENLACE_AQUI" class="button">Cierra</a>
     </div>
 </body>
 </html>
