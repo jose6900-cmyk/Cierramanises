@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso Rápido</title>
 
-    <!-- Favicon para navegador -->
     <link rel="icon" href="lava.png" type="image/png">
-
-    <!-- Icono para pantalla de inicio iPhone -->
     <link rel="apple-touch-icon" href="lava.png">
 
     <style>
@@ -33,9 +30,21 @@
             margin-bottom: 30px;
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .button {
-            background-color: #ffffff;
-            color: #2196F3;
             padding: 18px 40px;
             font-size: 20px;
             font-weight: bold;
@@ -45,17 +54,23 @@
             text-decoration: none;
             display: inline-block;
             transition: 0.3s;
+            color: #fff;
         }
 
-        .button:hover {
-            background-color: #e0e0e0;
+        .btn-cierra {
+            background-color: #e53935;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 30px;
+        .btn-cierra:hover {
+            background-color: #c62828;
+        }
+
+        .btn-abre {
+            background-color: #43a047;
+        }
+
+        .btn-abre:hover {
+            background-color: #2e7d32;
         }
 
         @media (max-width: 500px) {
@@ -70,7 +85,18 @@
     <div class="container">
         <h1>Lavaexpress MANISES</h1>
         <img src="lavama.jpg" alt="Imagen">
-        <a href="https://maker.ifttt.com/trigger/Cierra_Lavanderia/with/key/cPDTpgK4CdrNC60YBkGoGK" class="button">Cierra</a>
+
+        <div class="buttons">
+            <a href="https://maker.ifttt.com/trigger/Cierra_Lavanderia/with/key/cPDTpgK4CdrNC60YBkGoGK"
+               class="button btn-cierra">
+                Cierra
+            </a>
+
+            <a href="https://maker.ifttt.com/trigger/Abre_manises/with/key/cPDTpgK4CdrNC60YBkGoGK"
+               class="button btn-abre">
+                Abre
+            </a>
+        </div>
     </div>
 </body>
 </html>
